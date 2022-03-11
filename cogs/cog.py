@@ -14,7 +14,7 @@ class Cog(commands.Cog):
 
     @commands.command(help="Pings the bot and returns latency", aliases=['p'], usage='')
     async def ping(self, ctx):
-        await ctx.reply(f"Pong, {round(bot.latency, 1)}ms.", mention_author=False)
+        await ctx.reply(f"Pong, {round(self.bot.latency, 1)}ms.", mention_author=False)
 
 # --- Setup --- #
 
